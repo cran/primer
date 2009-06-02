@@ -1,9 +1,10 @@
 \name{igp}
 \alias{igp}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ A Lotka-Volterra model of intraguild predation }
+\title{ A Lotka-Volterra Model of Intraguild Predation }
 \description{
- A Lotka-Volterra model of intraguild predation, after Holt and Polis (1997). For use with \code{ode} in the \code{deSolve} package.
+ A Lotka-Volterra model of intraguild predation, after Holt and Polis
+ (1997).  For use with \code{ode} in the \code{deSolve} package.
 }
 \usage{
 igp(t, y, params)
@@ -20,9 +21,10 @@ igp(t, y, params)
  Returns a list of length one which is the vector of the rates of increase (required by \code{ode}).
 }
 \references{ 
-R.D. Holt and G.A Polis. A theoretical framework for intraguild predation. The American Naturalist, 149:745-764, 1997.
+Holt, R.D. and  Polis, G.A. (1997) A theoretical framework for
+ intraguild predation. \emph{The American Naturalist}, \bold{149}, 745--764.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R! Series. Springer, 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{ Hank Stevens <HStevens@muohio.edu> }
 \seealso{\code{\link{lvcompg}}, \code{\link{scheffer}} }

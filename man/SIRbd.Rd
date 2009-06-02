@@ -1,9 +1,11 @@
 \name{SIRbd}
 \alias{SIRbd}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ The S-I-R epidemilogical disease model with births and deaths }
+\title{ The S-I-R Epidemilogical Disease Model with Births and Deaths }
 \description{
-The S-I-R epidemilogical disease model with births and deaths (population dynamics), for use with  \code{ode} in the \code{deSolve} package. This model uses mass action transmission.
+The S-I-R epidemilogical disease model with births and deaths
+(population dynamics), for use with  \code{ode} in the \code{deSolve}
+package.  This model uses mass action transmission.
 }
 \usage{
 SIRbd(t, y, p)
@@ -21,11 +23,14 @@ The user does not put these directly into this function, but rather uses \code{o
   Returns of list of one component (required by \code{ode}).
 }
 \references{
-S.P. Ellner and J. Guckenheimer. Dynamic Models in Biology. Princeton University Press, 2006.
+  Ellner, S.P. and Guckenheimer, J. (2006) \emph{Dynamic Models in Biology}, Princeton University Press.
 
-W.O. Kermack and W.G. McCormick. A contribution to the mathematical theory of epidemics. Proceedings of the Royal Society, Series A, 115:700-721, 1927.
+Kermack, W.O. and McCormick, W.G. (1927) A contribution to the
+mathematical theory of epidemics. \emph{Proceedings of the Royal
+  Society, Series A}, \bold{115}, 700--721.
 
-M.H.H. Stevens. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}, Use R!
+Series. Springer.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 \seealso{ \code{\link{ross}}, \code{\link{SIRf}}, \code{\link{SIR}}  }

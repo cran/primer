@@ -10,13 +10,15 @@
   The format is:
  num [1:19] 32 16 10 9 8 7 8 6 4 5 ...
 }
-\source{Data are approximatations of histogram values for a single year of data in:
+\source{Data are approximations of histogram values for a single year of data in:
 
-S.L. Collins and S.M. Glenn. 1991. Importance of spatial and temporal dynamics in species regional abundance and distribution. Ecology, 72:654-664.
+Collins, S.L. and Glenn, S.M. (1991) Importance of spatial and temporal
+dynamics in species regional abundance and distribution. \emph{Ecology},
+\bold{72}, 654--664.
 
 }
 \references{
-Stevens, M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 }
 \examples{
 data(CandG)

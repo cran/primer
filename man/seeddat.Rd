@@ -3,7 +3,8 @@
 \docType{data}
 \title{ Chamaedorea Palm Seed Data Set}
 \description{
-This data set provides the number of seeds per individual in 2004. These data are the fates of each seed in a sample of 400 seeds. Seeds may have germinated (2), remained viable (1), or died (0). 
+This data set provides the number of seeds per individual in 2004.
+These data are the fates of each seed in a sample of 400 seeds.  Seeds may have germinated (2), remained viable (1), or died (0). 
 }
 \usage{data(seeddat)}
 \format{
@@ -14,10 +15,12 @@ This data set provides the number of seeds per individual in 2004. These data ar
 }
 
 \source{
-Berry, E.J., D.L. Gorchov, B.A. Endress, and M.H.H. Stevens. 2008. Source-sink dynamics within a plant population: the impact of substrate and herbivory on palm demography. Population Ecology, 50:63--77.
+Berry, E.J., Gorchov, D.L., Endress, B.A.,  and Stevens, M.H.H. (2008)
+Source-sink dynamics within a plant population: the impact of substrate
+and herbivory on palm demography. \emph{Population Ecology}, \bold{50}, 63--77.
 }
 \references{  
- Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.}
+ Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.}
 \author{ Hank Stevens (HStevens@muohio.edu) }
 \seealso{ \code{\link{DemoBoot}}, \code{\link{DemoInfo}}, \code{\link{seeddat}}, \code{\link{stagedat}} }
 

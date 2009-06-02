@@ -1,9 +1,10 @@
 \name{compcolM}
 \alias{compcolM}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Multi-species competition colonization model, with habitat destruction }
+\title{ Multi-species Competition-colonization Model, With Habitat Destruction }
 \description{
-  Multi-species competition colonization model, with habitat destruction, after Nee and May (1992). For use with \code{ode} in the \code{deSolve} package.
+  Multi-species competition colonization model, with habitat
+  destruction, after Nee and May (1992).  For use with \code{ode} in the \code{deSolve} package.
 }
 \usage{
 compcolM(t, y, params)
@@ -19,9 +20,11 @@ compcolM(t, y, params)
   \item{Component 1 }{vector of the state variables, y.}
 }
 \references{
-S. Nee and R.M. May. Dynamics of metapopulations: habitat destruction and competitive coexistence. Journal of Animal Ecology, 61:37--40, 1992.
+Nee, S. and May, R.M. (1992) Dynamics of metapopulations: habitat destruction
+and competitive coexistence. \emph{Journal of Animal Ecology},
+\bold{61}, 37--40.
 
- Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+ Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 \seealso{ \code{\link{levins}}, \code{\link{compcol}}, \code{\link{succniche}}  }

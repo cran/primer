@@ -1,9 +1,11 @@
 \name{predpreyRM}
 \alias{predpreyRM}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Rosenzweig-MacArthur predator-prey model }
+\title{ Rosenzweig-MacArthur Predator-prey Model }
 \description{
- An implementation of a predator-prey model, after Rosenzweig and MacArthur (1963). Includes prey density-dependence, and a type-II predator functional response. For use with \code{ode} in the \code{deSolve} package.
+ An implementation of a predator-prey model, after Rosenzweig and
+ MacArthur (1963).  Includes prey density-dependence, and a type-II
+ predator functional response.  For use with \code{ode} in the \code{deSolve} package.
 }
 \usage{
 predpreyRM(t, y, p)
@@ -20,9 +22,11 @@ predpreyRM(t, y, p)
 }
 
 \references{ 
-M.L. Rosenzweig and R.H. MacArthur. Graphical representation and stability conditions of predator-prey interactions. American Naturalist, 97:209--223, 1963.
+Rosenzweig, M.L. and MacArthur, R.H. (1963) Graphical representation and
+stability conditions of predator-prey interactions. \emph{The American
+  Naturalist}, \bold{97}, 209--223.
 
-Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 \seealso{ \code{\link{predpreyLV}}  }

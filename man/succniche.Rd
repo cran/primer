@@ -1,9 +1,10 @@
 \name{succniche}
 \alias{succniche}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ A four-state model of successional dynamics }
+\title{ A Four-state model of Successional Dynamics }
 \description{
-  This is the four-state, two-species model of the succession-niche model, after Pacala and Rees (1998). For use with \code{ode} in the \code{deSolve} package.
+  This is the five-state, two-species model of the succession-niche
+  model, after Pacala and Rees (1998).  For use with \code{ode} in the \code{deSolve} package.
 }
 \usage{
 succniche(t, y, params)
@@ -19,9 +20,11 @@ succniche(t, y, params)
   \item{Component 1 }{vector of the state variable (a scalar for the proportion of sites occupied).}
 }
 \references{
-S.W. Pacala and M. Rees. Models suggesting field experiments to test two hypotheses explaining successional diversity. The American Naturalist, 152:729-737, 1998.
+Pacala, S.W. and Rees, M. (1998) Models suggesting field experiments to
+test two hypotheses explaining successional diversity. \emph{The
+  American Naturalist}, \bold{152}, 729--737.
 
-M.H.H. Stevens.  A Primer of Ecology with R. Use R! Series. Springer. 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 
 \author{  Hank Stevens <HStevens@muohio.edu>  }
@@ -29,7 +32,7 @@ M.H.H. Stevens.  A Primer of Ecology with R. Use R! Series. Springer. 2009.
 \examples{
 params.suc <- c(a=7, c=0.2, g=.1, m=0.04, D=0)
 t=seq(0,50,.1)
-init.suc <- c(S=0, E=0.5, M=0.5, R=0.00)
+init.suc <- c(S=0, E=0.5, M=0.5, R=0.00) # Free space is implicit, F=1-(S+E+M+R).
 ccg.out <- data.frame(ode(init.suc, t, succniche, params.suc))
 matplot(t, ccg.out[,-1], type="l", ylab="Relative Frequency", 
          xlab="Time", ylim=c(0,1) )

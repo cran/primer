@@ -1,9 +1,9 @@
 \name{lvcompg}
 \alias{lvcompg}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ A general Lotka-Volterra competition model }
+\title{ A General Lotka-Volterra Competition Model }
 \description{
- A general Lotka-Volterra competition model, for any number of species. For use with \code{ode} in the \code{deSolve} package. This function uses a vector and matrix within the list of parameters.
+ A general Lotka-Volterra competition model, for any number of species.  For use with \code{ode} in the \code{deSolve} package. This function uses a vector and matrix within the list of parameters.
 }
 \usage{
 lvcompg(t, n, parms)
@@ -19,13 +19,13 @@ lvcompg(t, n, parms)
  Returns a list of length one which is the vector of the rates of increase (required by \code{ode}).
 }
 \references{
- A.J. Lotka. Elements of Mathematical Biology. Dover Publications, Inc., 1956.
+Lotka,  A.J. (1956) \emph{Elements of Mathematical Biology}. Dover Publications, Inc.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R! Series. Springer, 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 
 \author{  Hank Stevens <HStevens@muohio.edu>  }
-\seealso{\code{\link{igp}}, \code{\link{scheffer}} }
+\seealso{\code{\link{lvcomp3}}, \code{\link{clogistic}}, \code{\link{igp}}, \code{\link{scheffer}} }
 \examples{
 ## Specify the number of species
 S <- 10

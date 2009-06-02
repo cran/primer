@@ -23,9 +23,9 @@ dlogistic(alpha = 0.01, rd = 1, N0 = 2, t = 15)
  Returns a vector of population sizes from \eqn{N_0,\, \ldots,\, N_t}{N[0] to N[t]}, for integer time points.
 }
 \references{  
- Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.}
+ Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.}
 \author{ Hank Stevens (HStevens@muohio.edu) }
-\seealso{ \code{\link{clogistic}}, \code{\link{dlvcomp2}} }
+\seealso{ \code{\link{clogistic}}, \code{\link{dlvcomp2}}, \code{\link{lvcompg}} }
 \examples{
 time <- 20
 Ns <- dlogistic(t=20)

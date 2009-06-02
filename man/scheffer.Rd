@@ -3,12 +3,14 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ A resource-based model of alternative stable states }
 \description{
-A model of floating vs. submerged plant dominance in shallow aquatic systems, after Scheffeer et al. (2003). For use with \code{ode} in the \code{deSolve} package. Floating plants are better competitors for light, as long as submerged plants cannot drive down nitrogen levels.
+A model of floating vs. submerged plant dominance in shallow aquatic
+systems, after Scheffeer \emph{et al}. (2003).  For use with \code{ode}
+in the \code{deSolve} package.  Floating plants are better competitors for light, as long as submerged plants cannot drive down nitrogen levels.
 }
 \usage{
 scheffer(t, y, p)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{t}{ the time point for a realization of the integration.}
   \item{y}{ the vector of populations, at each time t. }
@@ -20,9 +22,12 @@ scheffer(t, y, p)
 }
 
 \references{ 
-M. Scheffer, S. Szabo, A. Gragnani, E.H. van Nes, S. Rinaldi, N. Kautsky, J. Norberg, R.M.M. Roijackers, and R.J.M. Franken. Floating plant dominance as a stable state. Proceeding of the National Academy of Sciences, U.S.A., 100:4040-4045, 2003.
+Scheffer, M., Szabo, S., Gragnani, A., van Nes, E.H., Rinaldi, S.,
+Kautsky, N., Norberg, J., Roijackers, R.M.M. and Franken,
+R.J.M. (2003) Floating plant dominance as a stable state. \emph{Proceeding of
+  the National Academy of Sciences, U.S.A.}, \bold{100}, 4040--4045.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R! Series. Springer, 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{ Hank Stevens <HStevens@muohio.edu> }
 \seealso{\code{\link{lvcompg}}, \code{\link{igp}}}

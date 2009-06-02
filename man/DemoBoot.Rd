@@ -16,25 +16,26 @@ DemoBoot(stagedat = NULL, fruitdat = NULL, seeddat = NULL, n = 1)
   \item{n}{  Number of bootstrap replicates. }
 }
 \details{
-   If necessary, more details than the description above 
+   This somewhat idiosyncratic function requires that the data frames
+   have particular structures matching the data sets included in this package.
 }
 \value{
   Returns a list of length \code{n}, where each element is the output of a demographic analysis (see \code{DemoInfo}).
 }
-\references{  H. Caswell. 2001. Matrix Population Models: Construction, Analysis, and Interpretation. Sinauer Associates, Inc., Sunderland, MA, USA, 2nd ed. edition.
+\references{Caswell, H. (2001) \emph{Matrix Population Models: Construction, Analysis, and Interpretation}. Sinauer Associates, Inc., Sunderland, MA, USA, 2nd ed. edition.
 
-S. P. Ellner and J. Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press.
+Ellner, S.P. and Guckenheimer, J. (2006) \emph{Dynamic Models in Biology}, Princeton University Press.
 
-M.H.H. Stevens. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 
-E.J. Berry, D.L. Gorchov,  B.A. Endress, and M.H.H. Stevens. 2008. Source-sink dynamics within a plant population: the impact of substrate and herbivory on palm demography. Population Ecology, 50:63--77.
+Berry, E.J., Gorchov, D.L., Endress, B.A. and Stevens, M.H.H. (2008) Source-sink dynamics within a plant population: the impact of substrate and herbivory on palm demography. \emph{Population Ecology}, \bold{50}, 63--77.
   }
 \author{ Hank Stevens (HStevens@muohio.edu) }
 
 \seealso{\code{\link{DemoInfo}}, \code{\link{ProjMat}},
 		\code{\link{stagedat}},
 		\code{\link{fruitdat}},
-		\code{\link{seeddat}},
+		\code{\link{seeddat}}
   }
 \examples{
 data(stagedat); data(fruitdat); data(seeddat)

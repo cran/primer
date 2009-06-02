@@ -23,14 +23,14 @@ lvcomp3(t, n, parms)
 }
 
 \references{
-Lotka, A.J. Elements of Mathematical Biology. Dover Publications, Inc., 1956.
+Lotka, A.J. (1956) \emph{Elements of Mathematical Biology}. Dover Publications, Inc.
 
-Stevens. M.H.H. A Primer of Ecology with R. Use R! Series. Springer, 2009.
+Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 
-\seealso{ \code{\link{lvcomp2}},\code{\link{lvcompg}}, \code{\link{clogistic}} }
+\seealso{ \code{\link{lvcomp2}}, \code{\link{lvcompg}}, \code{\link{clogistic}} }
 \examples{
 ## The function is currently defined as
 function (t, n, parms) 

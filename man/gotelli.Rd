@@ -1,9 +1,9 @@
 \name{gotelli}
 \alias{gotelli}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Propagule rain metapopulation model  }
+\title{ Propagule Rain Metapopulation Model  }
 \description{
-   A function for the Propagule rain or mainland-island metaapopulation dynamics, for use with \code{ode} in the \code{deSolve} package.
+   A function for the propagule rain or mainland-island metapopulation dynamics, for use with \code{ode} in the \code{deSolve} package.
 }
 \usage{
 gotelli(t, y, parms)
@@ -20,16 +20,16 @@ gotelli(t, y, parms)
   \item{Component 1 }{vector of the state variable (a scalar for the proportion of sites occupied).}
 }
 \references{ 
-N. Gotelli. Metapopulation models: the rescue effect, the propagule rain, and the core-satellite hypothesis. The American Naturalist, 138:768--776, 1991.
+Gotelli, N.J. (1991) Metapopulation models: the rescue effect, the propagule rain, and the core-satellite hypothesis. \emph{The American Naturalist}, \bold{138}, 768--776.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R!  Series. Springer, 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
-\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{lande}}, \code{\link{MetaSim}} \code{\link{clogistic}}  }
+\seealso{ \code{\link{gotelli}},
+  \code{\link{hanski}}, \code{\link{lande}}, \code{\link{MetaSim}},
+  \code{\link{clogistic}}  }
+
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
 function (t, y, parms) 

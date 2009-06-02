@@ -1,12 +1,16 @@
 \name{MetaSim}
 \alias{MetaSim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ A function to simulate stochastic metapopulation models }
+\title{ Simulation of  Stochastic Metapopulation Models }
 \description{
-  Originally focused on creating a community of core-satellite species, this function allows simulation of several metapopulation models, where colonization and extinction rates are stochastic, random draws, with specified means and ranges.
+  Originally focused on creating a community of core-satellite species,
+  this function allows simulation of several metapopulation models,
+  where colonization and extinction rates are stochastic draws from
+  uniform distributions, with specified means and ranges.
 }
 \usage{
-MetaSim(Time = 50, NSims = 1, method = "hanski", ci = 0.25, e = 0.25, phi = 0.75, p0 = 0.5, D = 0.5)
+MetaSim(Time = 50, NSims = 1, method = "hanski",
+               ci = 0.25, e = 0.25, phi = 0.75, p0 = 0.5, D = 0.5)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,7 +24,9 @@ MetaSim(Time = 50, NSims = 1, method = "hanski", ci = 0.25, e = 0.25, phi = 0.75
   \item{D}{ Parameter for habitat destruction; applies to only the "lande" model. }
 }
 \details{
-  \code{phi} is one half of the relative range of each rate (colonization and extinction). For each time step, each rate is drawn from a uniform distribution, Unif(rate-phi, rate+phi). Thus, the range is 2*phi, and center on the specified mean (ci or e).
+  \code{phi} is one half of the relative range of each rate
+  (colonization and extinction).  For each time step, each rate is drawn
+  from a uniform distribution, Unif(rate-phi, rate+phi).  Thus, the range is 2*phi, and center on the specified mean (ci or e).
 }
 \value{
 Function returns a list with these components.
@@ -30,10 +36,10 @@ Function returns a list with these components.
 \item{Parameters }{A named vector of the parameters used for the simulations.} }
 
 \references{ 
-Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
-\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{levins}}, \code{\link{MetaSim}} \code{\link{clogistic}}  }
+\seealso{ \code{\link{gotelli}}, \code{\link{hanski}}, \code{\link{levins}} }
 \examples{
 out <- MetaSim(NSims=2)
 pops <- out$Ns

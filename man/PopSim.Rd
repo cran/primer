@@ -21,7 +21,7 @@ PopSim(Rs, N0, years = 50, sims = 10)
 \value{
  Returns a matrix of population sizes for time = t (rows) for each replicated population (columns).
 }
-\references{ M.H.H. Stevens. 2009 A Primer of (Theoretical) Ecology with R. Use R!  Series. Springer. }
+\references{Stevens,  M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R!  Series. Springer. }
 
 \seealso{ \code{\link{sparrows}} }
 \examples{

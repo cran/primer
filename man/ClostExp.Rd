@@ -1,7 +1,7 @@
 \name{ClostExp}
 \alias{ClostExp}
 \docType{data}
-\title{Closterium population data}
+\title{Closterium Population Data}
 \description{
    Data set from an experiment testing whether trophic heterogeneity influences long term population sizes. 
 }
@@ -17,10 +17,12 @@
   }
 }
 \source{
-  Stevens, M. H. H. and C. E. Steiner. 2006. Effects of predation and nutrient enrichment on a food web with edible and inedible prey. Freshwater Biology 51:666--671.
+  Stevens, M. H. H. and Steiner, C. E. (2006) Effects of predation and
+  nutrient enrichment on a food web with edible and inedible
+  prey. \emph{Freshwater Biology}, \bold{51}, 666--671.
 }
 \references{
-   Stevens, M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+   Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 }
 \examples{
 data(ClostExp)

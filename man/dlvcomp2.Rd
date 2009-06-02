@@ -1,9 +1,9 @@
 \name{dlvcomp2}
 \alias{dlvcomp2}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Discrete Logistic Growth }
+\title{Discrete Logistic Competition }
 \description{
- A function to simulate discrete 2 species Lotka-Volterra growth.
+ A function to simulate discrete 2 species Lotka-Volterra competition.
 }
 \usage{
 dlvcomp2(N, alpha, rd = c(1, 1))
@@ -20,11 +20,14 @@ dlvcomp2(N, alpha, rd = c(1, 1))
 }
 
 \references{  
- Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.}
+ Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.}
+
 \author{ Hank Stevens (HStevens@muohio.edu) }
+
 \seealso{\code{\link{dlogistic}}, \code{\link{lvcomp2}}, 
-\code{\link{lvcomp3}} 
+\code{\link{lvcomp3}}, \code{\link{lvcompg}} 
 }
+
 \examples{
 alphs <- matrix(c( .01, .005,
                   .008, .01), ncol=2, byrow=TRUE)

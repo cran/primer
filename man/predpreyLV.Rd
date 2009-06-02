@@ -1,7 +1,7 @@
 \name{predpreyLV}
 \alias{predpreyLV}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ The Lotka-Volterra predator-prey model }
+\title{ The Lotka-Volterra Predator-prey Model }
 \description{
   The Lotka-Volterra predator-prey model, for use with \code{ode} in the \code{deSolve} package.
 }
@@ -19,9 +19,9 @@ predpreyLV(t, y, params)
   \item{Component 1 }{vector of the state variables, y.}
 }
 \references{
-Lotka, A.J. 1956. Elements of Mathematical Biology. Dover Publications, Inc.
+Lotka, A.J. (1956) \emph{Elements of Mathematical Biology}. Dover Publications, Inc.
 
-Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 \seealso{ \code{\link{predpreyRM}}  }

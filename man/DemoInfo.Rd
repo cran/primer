@@ -22,16 +22,16 @@ DemoInfo(mat)
   \item{Elasticities }{A matrix of elasticities}
   \item{PPM }{A population projection matrix}
 }
-\references{ H. Caswell.2001. Matrix Population Models: Construction, Analysis, and Interpretation. Sinauer Associates, Inc., Sunderland, MA, USA, 2nd ed. edition.
+\references{ Caswell, H. (2001) \emph{Matrix Population Models: Construction, Analysis, and Interpretation}. Sinauer Associates, Inc., Sunderland, MA, USA, 2nd ed. edition.
 
-S.P. Ellner and J. Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press.
+Ellner, S.P. and Guckenheimer, J. (2006) \emph{Dynamic Models in Biology}. Princeton University Press.
 
-M.H.H. Stevens. 2009. A Primer of Ecology with R. Use R!  Series. Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R!  Series. Springer.
 
  }
 \author{ Hank Stevens (HStevens@muohio.edu)}
 \seealso{ \code{\link{DemoBoot}},
-	  \code{\link{ProjMat}},
+	  \code{\link{ProjMat}}
  }
 \examples{
 ### A two stage annual transition matrix

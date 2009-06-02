@@ -1,7 +1,7 @@
 \name{hanski}
 \alias{hanski}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Core-satellite metapopulation model }
+\title{ Core-satellite Metapopulation Model }
 \description{
   A function for the core-satellite metaapopulation dynamics, for use with \code{ode} in the \code{deSolve} package.
 }
@@ -20,13 +20,14 @@ hanski(t, y, parms)
   \item{Component 1 }{vector of the state variable (a scalar for the proportion of sites occupied).}
 }
 \references{ 
-I. Hanski. 1982. Dynamics of regional distribution: the core and satellite species hypothesis. Oikos, 38:210--221.
+Hanski, I. (1982) Dynamics of regional distribution: the core and
+   satellite species hypothesis. \emph{Oikos}, \bold{38}, 210--221.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R!  Series. Springer, 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R!  Series. Springer.
 }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 
-\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{lande}}, \code{\link{MetaSim}} \code{\link{clogistic}}  }
+\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{lande}}, \code{\link{MetaSim}}, \code{\link{clogistic}}  }
 
 \examples{
 prms <- c(ci<- 0.15, e=0.05)

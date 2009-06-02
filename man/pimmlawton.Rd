@@ -1,9 +1,10 @@
 \name{pimmlawton}
 \alias{pimmlawton}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ A function to analysis Jacobian matrices of foodwebs}
+\title{ Analysis of Jacobian Lotka-Volterra Food Web Matrices}
 \description{
-  Used primarily to repeat simulations and analyses of Pimm and Lawton (1977), given a Jacobian matrix. Analyses include eigenanalysis, but also measuring average interaction strength (May 1972),  average intraspecific negative density dependence, and the strength of the omnivory interaction, if present.
+  Used primarily to repeat simulations and analyses of Pimm and Lawton
+  (1977), given a Jacobian matrix.  Analyses include eigenanalysis, but also measuring average interaction strength (May 1972),  average intraspecific negative density dependence, and the strength of the omnivory interaction, if present.
 }
 \usage{
 pimmlawton(mat, N = 1, omni.i = NA, omni.j = NA, omega = NULL)
@@ -17,7 +18,8 @@ pimmlawton(mat, N = 1, omni.i = NA, omni.j = NA, omega = NULL)
   \item{omega}{ if not NULL, a scalar $0<x<1$ indicating the relative weight of omniovory (after McCann et al. (1998)) }
 }
 \details{
-This function simulates a constrained randomization of a Jacobian food web matrix. The matrix it uses \code{mat} is of a special form, which assumes that all non-zero values are drawn from a uniform distribution between zero and a value of some specified magnitude, either positive or negative.
+This function simulates a constrained randomization of a Jacobian food
+web matrix.  The matrix it uses \code{mat} is of a special form, which assumes that all non-zero values are drawn from a uniform distribution between zero and a value of some specified magnitude, either positive or negative.
 }
 \value{
  Returns a data frame, where each row corresponds to a single random Jacobian matrix, with the following columns.
@@ -28,23 +30,28 @@ This function simulates a constrained randomization of a Jacobian food web matri
   \item{I.omni }{average interaction strength for the omnivory interaction; the square root of, sum of the squared omnivory elements effect of predator on prey and prey on predator divided by two.}
 }
 \references{ 
-R.M. May. Stability and Complexity in Model Ecosystems, volume 6 of Monographs in Population Biology. Princeton University Press, 1973.
+May, R.M. (1973) \emph{Stability and Complexity in Model Ecosystems}, volume 6 of \emph{Monographs in Population Biology}. Princeton University Press.
 
-K. McCann, A. Hastings, and G.R. Huxel. Weak trophic interactions and the balance of nature. Nature, 395:794--798, 1998.
+McCann, K., Hastings, A. and Huxel, G.R. (1998) Weak trophic
+interactions and the balance of nature. \emph{Nature}, \bold{395}, 794--798.
 
-S.L. Pimm and J.H. Lawton. Number of trophic levels in ecological communities. Nature, 268:329--331, 1977.
+Pimm, S.L and Lawton, J.H. (1997) Number of trophic levels in ecological
+communities. \emph{Nature}, \bold{268}, 329--331.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R! Series. Springer. 2009.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer. 2009.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
 
 \examples{
-### A relevant style of matrix for the first food chain in Pimm and Lawton (1977). Note each non-zero element is the appropriate sign, and the maximum magnitude specified by Pimm and Lawton (1977)
+### A relevant style of matrix for the first food chain in Pimm and Lawton (1977). 
+### Note each non-zero element is the appropriate sign, and the maximum magnitude 
+### specified by Pimm and Lawton (1977).
+
 Aq = matrix(c(
-  -1,   -10,   0,     0,
-  0.1, 0,   -10,  0,
-  0,    0.1,   0,    -10,
-  0,      0,    0.1,   0),
+   -1, -10,   0,   0,
+  0.1,   0, -10,   0,
+    0, 0.1,   0, -10,
+    0,   0,  0.1,  0),
   nrow=4, byrow=TRUE)
 
 pimmlawton(Aq, N=1)

@@ -2,7 +2,7 @@
 \alias{lande}
 %- Also NEED an '\alias' for EACH other topic documented here.
 
-\title{ A metapopulation model with habitat destruction }
+\title{ A Metapopulation Model with Habitat Destruction }
 \description{
    A function for the metaapopulation dynamics, for use with \code{ode} in the \code{deSolve} package.
 }
@@ -21,14 +21,14 @@ lande(t, y, parms)
   \item{Component 1 }{vector of the state variable (a scalar for the proportion of sites occupied).}
 }
 \references{ 
-P. Kareiva and U. Wennergren. 1995. Connecting landscape patterns to ecosystem and population processes. Nautre, 373:299--302.
+P. Kareiva and Wennergren, U. (1995) Connecting landscape patterns to ecosystem and population processes. \emph{Nature}, \bold{373}, 299--302.
 
-R. Lande. 1987. Extinction thresholds in demographic models of territorial populations. American Naturalist, 130:624--635.
+Lande, R. (1987) Extinction thresholds in demographic models of territorial populations. \emph{The American Naturalist}, \bold{130}, 624--635.
 
-M.H.H. Stevens. 2009. A Primer of Ecology with R. Use R!  Series. Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R!  Series. Springer.
 }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
-\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{levins}}, \code{\link{MetaSim}} \code{\link{clogistic}}  }
+\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{levins}}, \code{\link{MetaSim}}, \code{\link{clogistic}}  }
 \examples{
 ## The function is currently defined as
 function (t, y, parms) 

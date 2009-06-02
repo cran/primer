@@ -22,9 +22,11 @@ The user does not put these directly into this function, but rather uses \code{o
 }
 
 \references{
-Sibly, R.M., Barker, D., Denham, M.C., Hone, J., and Pagel, M. On the regulation of populations of mammals, birds, fish, and insects. Science, 309:607--610, 2005.
+Sibly, R.M., Barker, D., Denham, M.C., Hone, J., and Pagel, M. (2005) On
+the regulation of populations of mammals, birds, fish, and
+insects. \emph{Science}, \bold{309}, 607--610.
 
-Stevens, M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{ Hank Stevens (HStevens@muohio.edu) }
 

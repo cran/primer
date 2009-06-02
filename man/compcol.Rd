@@ -1,9 +1,10 @@
 \name{compcol}
 \alias{compcol}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Two-species compettition-colonization metapopulation model }
+\title{ Two-species Competition-colonization Metapopulation Model }
 \description{
- This model implements a Levins-type metapopulation model for two species, after Hastings (1980). For use with \code{ode} in the \code{deSolve} package.
+ This model implements a Levins-type metapopulation model for two
+ species, after Hastings (1980).  For use with \code{ode} in the \code{deSolve} package.
 }
 \usage{
 compcol(t, y, params)
@@ -19,12 +20,13 @@ compcol(t, y, params)
   \item{Component 1 }{vector of the state variables, y.}
 }
 \references{
-A. Hastings. Disturbance, coexistence, history, and competition for space. Theoretical Population Biology, 18:363--373, 1980.
+Hastings, A. (1980) Disturbance, coexistence, history, and competition for
+space. \emph{Theoretical Population Biology}, \bold{18}, 363--373.
 
- Stevens. M.H.H. 2009. A Primer of Ecology with R. Use R! Series. Springer.
+ Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
-\seealso{ \code{\link{levins}},\code{\link{compcolM}}, \code{\link{succniche}}  }
+\seealso{ \code{\link{levins}}, \code{\link{compcolM}}, \code{\link{succniche}}  }
 \examples{
 library(deSolve)
 pars <- c(c1 = .3, c2 = 1, m1 = .1, m2 = .1)

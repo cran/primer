@@ -1,7 +1,7 @@
 \name{levins}
 \alias{levins}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Classic metapopulation model }
+\title{Classic Metapopulation Model }
 \description{
   A function for the classic metaapopulation dynamics, for use with \code{ode} in the \code{deSolve} package.
 }
@@ -20,17 +20,13 @@ levins(t, y, parms)
   \item{Component 1 }{vector of the state variable (a scalar for the proportion of sites occupied).}
 }
 \references{
-R. Levins. Some demographic and genetic consequences of environmental heterogeneity for biological control. Bulletin of the Entomological Society of America, 15:237--240, 1969.
+Levins, R. (1969) Some demographic and genetic consequences of environmental heterogeneity for biological control. \emph{Bulletin of the Entomological Society of America}, \bold{15}, 237--240.
 
-M.H.H. Stevens. A Primer of Ecology with R. Use R!  Series. Springer, 2009.
+Stevens, M.H.H. (2009) A Primer of Ecology with R. Use R!  Series. Springer.
  }
 \author{  Hank Stevens <HStevens@muohio.edu>  }
-\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{lande}}, \code{\link{MetaSim}} \code{\link{clogistic}}  }
+\seealso{ \code{\link{gotelli}}, \code{\link{hanski}},\code{\link{lande}}, \code{\link{MetaSim}}, \code{\link{clogistic}}  }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
 ## The function is currently defined as
 function (t, y, parms) 
 {

@@ -12,8 +12,8 @@ Functions and data for "A Primer of Ecology with R"
 \tabular{ll}{
 Package: \tab primer\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2009-03-27\cr
+Version: \tab 1.0\cr
+Date: \tab 2012-05-16\cr
 License: \tab GPL version 2 or later\cr
 LazyLoad: \tab yes\cr
 }
@@ -22,12 +22,11 @@ LazyLoad: \tab yes\cr
 Hank Stevens <HStevens@muohio.edu>
 }
 \references{
-Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R} Springer.
+Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R} Springer, 2nd printing.
 }
 
 \keyword{ package }
 \seealso{
-\code{\code{\link{levins}}, \code{\link{lvcompg}}, \code{\link{predpreyLV}}, \code{\link{scheffer}}, \code{\link[deSolve]{ode}} 
-}
+\code{\link[primer]{lvcompg}}, \code{\link[deSolve]{ode}} 
 }
 

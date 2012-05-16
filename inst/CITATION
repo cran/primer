@@ -5,13 +5,12 @@
      vers <- paste("R package version", desc$Version)
      
      citEntry(entry="Book",
-              title = "A Primer of Ecology with R",
-              author = personList(as.person("M. H. H. Stevens"),
+              title = "A Primer of Ecology with R, 2nd printing",
+              author = personList(as.person("M. H. H. Stevens")),
 	      publisher = "Springer",
 	      address="New York",
               year = 2009,
-     
-              textVersion =
-              paste("Stevens, M.H.H. (2009)",
-	      "A Primer of Ecology with R",
-	      "Springer, New York")
+              textVersion ="Stevens, M.H.H. (2009),
+	      A Primer of Ecology with R (2nd printing), Springer, New York"
+)
+

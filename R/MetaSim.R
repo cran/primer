@@ -2,7 +2,7 @@
 function (Time = 50, NSims = 1, method = "hanski", ci = 0.25, 
     e = 0.25, phi = 0.75, p0 = 0.5, D = 0.5) 
 {
-    require(deSolve)
+    
     out.stochastic <- matrix(NA, nrow = Time + 1, ncol = NSims)
     for (run in 1:NSims) out.stochastic[, run] <- {
         dpdt <- switch(pmatch(method, c("hanski", "levins", "gotelli", 

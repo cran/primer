@@ -9,3 +9,4 @@ import(
   deSolve,
   lattice
 )
+importFrom("graphics", "axis", "box", "lines", "plot", "points")importFrom("stats", "dbeta", "integrate", "rbeta", "runif")
